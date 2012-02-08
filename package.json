@@ -1,0 +1,39 @@
+{
+   "name": "node_sfml",
+   "version": "0.1.0",
+   "description": "A NodeJS wrapper around SFML libraries",
+   "main": "index.js",
+   "author": "Mikael Bourges-Sevenier <msevenier@motorola.com>",
+   "keywords": [ "sfml", "opengl", "audio", "graphics" ],
+   "maintainers": [
+       {
+           "name": "Mikael Bourges-Sevenier",
+           "email": "msevenier@motorola.com",
+           "web": "http://www.motorola.com",
+           "twitter": "msevenier"
+       }
+   ],
+   "licenses": [
+       {
+           "type": "Motorola Mobility Open Source"
+       }
+   ],
+   "repositories": [
+       {
+           "type": "git",
+           "url": "https://mikeseven@github.com/Motorola-Mobility/node-sfml.git" 
+       } 
+   ],
+   "directories": {
+       "src": "src",
+       "lib": "lib",
+       "test": "test"
+   },
+   "engines": {
+       "node": ">=0.6.5"
+   },
+   "scripts": {
+       "install": "node-waf configure clean build"
+   }
+}
+
