@@ -1,4 +1,4 @@
-var platform = require(__dirname + '/../platform.js');
+var platform = require('../platform.js');
 var sfml = platform.sfml;
 var document = platform.document();
 var util=require('util');
@@ -40,7 +40,7 @@ function draw() {
 function handleEvent(event) {
   log('Received event: '+util.inspect(event));
   
-  if(event.Type == 'closed') {
+  if(event.type == 'quit') {
     console.log('Window closing');
     canvas.Close();
     process.exit(0);

@@ -21,6 +21,8 @@ Object.defineProperty(SFML.RenderWindow, 'events', {
       events.emit('tick', delta);
     }, 16);
     return events;
-  }
+  },
+  enumerable: true,
+  configurable: true
 });*/
 
