@@ -13,11 +13,10 @@
            "twitter": "msevenier"
        }
    ],
-   "licenses": [
-       {
-           "type": "Motorola Mobility Open Source"
-       }
-   ],
+   "licenses": [{
+        "type": "BSD",
+        "url": "http://github.com/mikeseven/node-sfml/raw/master/LICENSE.BSD.txt"
+    }],
    "repositories": [
        {
            "type": "git",
