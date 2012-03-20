@@ -1,4 +1,4 @@
-var SFML = module.exports = require('./build/Release/node_sfml.node');
+var SFML = module.exports = require('./build/Release/sfml.node');
 
 // Easy event emitter based event loop.  Started automatically when the first
 // listener is added.

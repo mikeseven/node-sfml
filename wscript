@@ -27,7 +27,7 @@ def configure(conf):
 
 def build(bld):
   obj = bld.new_task_gen("cxx", "shlib", "node_addon")
-  obj.target = "node_sfml"
+  obj.target = "sfml"
   obj.source  = bld.path.ant_glob('src/*.cc')
   obj.cxxflags = ["-g"]
   obj.uselib=['SFML']
@@ -38,7 +38,7 @@ def build(bld):
 
 def shutdown():
   if Options.commands['clean']:
-    if exists('node_sfml.node'): unlink('node_sfml.node')
+    if exists('sfml.node'): unlink('sfml.node')
   else:
-    if exists('build/Release/node_sfml.node') and not exists('node_sfml.node'):
-      symlink('build/Release/node_sfml.node', 'node_sfml.node')
+    if exists('build/Release/sfml.node') and not exists('sfml.node'):
+      symlink('build/Release/sfml.node', 'sfml.node')

@@ -643,6 +643,6 @@ void init(Handle<Object> target) {
   target->Set(JS_STR("Style"), Style);
 }
 
-NODE_MODULE(node_sfml, init)
+NODE_MODULE(sfml, init)
 }
 
